@@ -2,8 +2,13 @@
 <html>
     <head>
         <title>
-            {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}
+            {% if page.url == '/index.html' %}
+                {{ site.name }}: {{ site.description }}
+            {% else %}
+                {% if page.title %}&quot;{{ page.title }}&quot; by {% endif %}{{ site.name }}
+            {% endif %}
         </title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
     </head>
     <body>
 
