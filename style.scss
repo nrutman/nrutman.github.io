@@ -1,2 +1,6 @@
-@import "_scss/bourbon/bourbon";
-@import "_scss/neat/neat";
+// Libraries
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
