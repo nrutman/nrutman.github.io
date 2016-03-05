@@ -1,5 +1,11 @@
 /**
  * Font Stacks
  */
-$sansSerifFontStack: Vollkorn, Georgia serif;
+$serifFontStack: Vollkorn, Georgia serif;
 $sansSerifFontStack: Raleway, Helvetica, Arial, sans-serif;
+
+/**
+ * Bitters Base Styles
+ */
+$font-stack-system: $serifFontStack;
+$base-font-family: $sansSerifFontStack;

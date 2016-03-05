@@ -1,16 +1,17 @@
 ---
 ---
 
+// Site Variables
+@import "nr/variables";
+
 // Libraries
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "base/base";
 
 // Fonts
 @import "fonts/raleway";
 @import "fonts/vollkorn";
-
-// Site Variables
-@import "nr/variables";
 
 // Site Styles
 @import "nr/layout";
