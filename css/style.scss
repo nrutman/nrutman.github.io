@@ -6,4 +6,9 @@
 @import "neat/neat";
 
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
+@import "fonts/raleway";
+@import "fonts/vollkorn";
+
+// Site Styles
+@import "nr/variables";
+@import "nr/typography";
