@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            {% if page.url == '/index.html' %}
+            {% if page.url == '/index.html' or page.url == '/' %}
                 {{ site.name }}: {{ site.description }}
             {% else %}
                 {% if page.title %}&quot;{{ page.title }}&quot; by {% endif %}{{ site.name }}

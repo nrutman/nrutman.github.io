@@ -3,8 +3,8 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: Vollkorn, Georgia, serif;
+$heading-font-family: Raleway, Helvetica, sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -18,12 +18,20 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$max-container-size: 1200px;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
+$blue: #085ACD;
+$darker-gray: #27292D;
+$dark-gray: #414141;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #E6E6E6;
+$yellow: #E2A607;
+$teal: #34BBAA;
+
+// Palette
+$theology-color: $yellow;
+$technology-color: $teal;
 
 // Font Colors
 $base-font-color: $dark-gray;

@@ -6,14 +6,14 @@
 name: Nathan Rutman
 
 # Short bio or description (displayed in the header)
-description: My random musings...
+description: A father, Christian, designer, software engineer, and pastor gripped by the love of Jesus and inspired by modern technology.
 
 # Site Logo
 logo: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://new.nathanrutman.com
+url: http://nrutman.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
