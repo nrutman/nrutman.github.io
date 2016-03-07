@@ -1,0 +1,133 @@
+body.home {
+
+    .banner img {
+        display: block;
+        width: 100%;
+    }
+
+    .intro {
+        background-color: $darker-gray;
+        color: white;
+        font-family: $heading-font-family;
+        font-size: 1.5em;
+        font-weight: 300;
+
+        p strong {
+            font-weight: 800;
+        }
+    }
+
+    .intro-content {
+        @extend .page-container;
+
+        position: relative;
+    }
+
+    .intro-item {
+        padding-bottom: 16px;
+        padding-top: 32px;
+        width: 50%;
+
+        &.theology {
+            float: left;
+            padding-right: 12%;
+
+            p strong {
+                color: $theology-color;
+            }
+
+            .more {
+                color: $theology-color;
+
+                &:after {
+                    right: -4.5%;
+                }
+            }
+        }
+
+        &.technology {
+            margin-left: 50%;
+            padding-left: 12%;
+            width: auto;
+
+            p strong {
+                color: $technology-color;
+            }
+
+            .more {
+                color: $technology-color;
+
+                &:after {
+                    left: -4.5%;
+                }
+            }
+        }
+
+        .more {
+            font-size: 0.6em;
+            font-weight: bold;
+            margin: 0;
+            padding-top: 12px;
+            position: relative;
+            text-transform: uppercase;
+
+            &:after {
+                border-top: 1px solid transparentize(white, 0.85);
+                content: "";
+                display: block;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            img {
+                margin-right: 5px;
+                vertical-align: -2px;
+                width: 0.85em;
+            }
+        }
+    }
+
+    .intro-icon {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        bottom: 50px;
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 10%;
+
+        &:after {
+            bottom: -50px;
+            content: "";
+            display: block;
+            left: 0;
+            height: 50px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .theology .intro-icon {
+        background-color: transparentize($theology-color, 0.85);
+        background-image: url('/img/theology.svg');
+        right: 50%;
+
+        &:after {
+            background-color: transparentize($theology-color, 0.85);
+        }
+    }
+
+    .technology .intro-icon {
+        background-color: transparentize($technology-color, 0.85);
+        background-image: url('/img/technology.svg');
+        left: 50%;
+
+        &:after {
+            background-color: transparentize($technology-color, 0.85);
+        }
+    }
+
+}
