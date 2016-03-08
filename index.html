@@ -7,7 +7,7 @@ layout: home
 </div>
 
 <div class="intro">
-    <div class="intro-content">
+    <div class="intro-content page-container">
         <div class="intro-item theology">
             <p><strong>Jesus Christ</strong> has impacted me more than anything or anyone else.</p>
             <p class="more"><img src="/img/arrow-theology.svg"> Posts about Jesus</p>
@@ -21,7 +21,8 @@ layout: home
     </div>
 </div>
 
-<p>Ullamco voluptate eu ex adipisicing eiusmod irure dolore duis ut excepteur ullamco et excepteur aliquip. Veniam magna minim cillum reprehenderit culpa reprehenderit ea quis culpa eiusmod ad veniam do. Voluptate laborum occaecat irure ut voluptate labore proident. Incididunt labore qui dolor adipisicing ut consequat occaecat. Consequat anim dolor aliqua occaecat cupidatat mollit incididunt amet. Duis mollit tempor Lorem nulla exercitation commodo incididunt fugiat adipisicing. Excepteur irure consectetur ex deserunt in anim ipsum. Et nulla deserunt reprehenderit et occaecat excepteur aute laborum magna nisi laborum.</p>
-<p>Amet nisi aliqua sint aliquip elit aliqua eu nulla cillum est. Nisi cillum esse officia qui nisi enim cillum veniam ullamco exercitation eu ut mollit ullamco. Eiusmod laboris do excepteur velit elit officia et ullamco ad voluptate occaecat elit est. Incididunt amet et consectetur nisi est ea anim aute amet velit id sint nostrud et eu. Deserunt velit enim fugiat ad sunt commodo excepteur dolor nostrud ullamco ipsum mollit excepteur pariatur nostrud eu incididunt.</p>
-<p>Quis adipisicing Lorem et consequat excepteur id aute fugiat et velit excepteur ut eu sint consectetur. Fugiat elit ut sunt qui pariatur in ipsum nisi laboris. Do laboris aliquip sint commodo deserunt excepteur non duis adipisicing enim voluptate nulla ea sit sunt exercitation. In adipisicing dolor deserunt qui cupidatat aliquip quis enim amet Lorem id consequat irure eiusmod duis proident ad. Reprehenderit minim mollit tempor nisi adipisicing nisi officia elit esse esse incididunt consectetur nulla reprehenderit ipsum et. Ipsum sint veniam tempor consequat dolor dolore amet mollit commodo aliqua laboris anim.</p>
-<p>Nisi aliquip eu amet enim ad officia pariatur qui quis culpa. Id labore magna minim amet adipisicing nostrud dolor. Ea reprehenderit minim elit dolore cillum aliquip mollit pariatur cupidatat incididunt non excepteur voluptate est veniam aliquip. Dolor pariatur incididunt et sunt fugiat exercitation consectetur labore tempor elit eiusmod do do exercitation ut. Aute dolor qui sit ex incididunt voluptate eu enim occaecat amet ullamco voluptate. Non irure aliquip tempor aute irure non sunt mollit deserunt ut voluptate culpa sunt ipsum. Veniam ipsum ullamco tempor id commodo excepteur commodo pariatur officia fugiat fugiat anim. Cillum laborum reprehenderit mollit fugiat minim ad eu aute pariatur est.</p>
+<div class="posts page-container">
+    {% for post in site.posts %}
+        {% include post.html post=post %}
+    {% endfor %}
+</div>

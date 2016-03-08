@@ -1,0 +1,14 @@
+<article class="post {% include post.category-slugs.html post=post %}">
+    <h1 class="post-title">{{ post.title }}</h1>
+    <p>{{ post.categories }}</p>
+    <div class="post-meta">
+        <span class="post-date" title="Posted on {{ post.date | date: "%A, %B %-d, %Y" }}">
+            <strong>{{ post.date | date: "%b %d" }}</strong><br>
+            {{ post.date | date: "%Y" }}
+        </span>
+        <a class="post-permalink" href="{{ page.url }}" title="Permalink to &quot;{{ post.title }}&quot;"></a>
+    </div>
+    <section class="post-content">
+        {{ post.content }}
+    </section>
+</article>

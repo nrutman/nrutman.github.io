@@ -18,8 +18,6 @@ body.home {
     }
 
     .intro-content {
-        @extend .page-container;
-
         position: relative;
     }
 
@@ -40,7 +38,7 @@ body.home {
                 color: $theology-color;
 
                 &:after {
-                    right: -4.5%;
+                    right: -5%;
                 }
             }
         }
@@ -58,7 +56,7 @@ body.home {
                 color: $technology-color;
 
                 &:after {
-                    left: -4.5%;
+                    left: -5%;
                 }
             }
         }
@@ -111,22 +109,50 @@ body.home {
     }
 
     .theology .intro-icon {
-        background-color: transparentize($theology-color, 0.85);
+        background-color: mix($theology-color, $darker-gray, 15);
         background-image: url('/img/theology.svg');
         right: 50%;
 
         &:after {
-            background-color: transparentize($theology-color, 0.85);
+            background-color: mix($theology-color, $darker-gray, 15);
         }
     }
 
     .technology .intro-icon {
-        background-color: transparentize($technology-color, 0.85);
+        background-color: mix($technology-color, $darker-gray, 15);
         background-image: url('/img/technology.svg');
         left: 50%;
 
         &:after {
-            background-color: transparentize($technology-color, 0.85);
+            background-color: mix($technology-color, $darker-gray, 15);
+        }
+    }
+
+    .posts {
+        overflow: auto;
+        position: relative;
+
+        &:after {
+            bottom: 0;
+            content: "";
+            background-color: fade-out($darker-gray, 0.9);
+            display: block;
+            left: 50%;
+            margin-left: -1px;
+            position: absolute;
+            top: 0;
+            width: 2px;
+            z-index: 20;
+        }
+    }
+
+    .post {
+        &.category-theology, &.category-technology {
+            width: 50%;
+
+            .post-meta {
+                width: 10%;
+            }
         }
     }
 
