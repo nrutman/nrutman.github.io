@@ -1,11 +1,105 @@
 .post {
+    padding: 2em 0;
     position: relative;
+
+    &:first-child + .post {
+        padding-top: 4em;
+    }
+}
+
+.post-title {
+    float: left;
+    font-size: 1.75em;
+    width: 75%;
 }
 
 .post-meta {
     display: block;
-    position: absolute;
+    float: right;
+    max-width: 120px;
     right: 0;
     top: 0;
-    width: 5%;
+    width: 20%;
 }
+
+.post-date {
+    background-color: lighten($dark-gray, 20%);
+    color: white;
+    display: block;
+    font-family: $heading-font-family;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1;
+    padding: 1em 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+
+    strong {
+        font-size: 20px;
+        font-weight: inherit;
+    }
+}
+
+.post-content {
+    clear: left;
+    width: 75%;
+}
+
+
+/**
+ * Main Cateogry Overrides
+ */
+
+.post {
+    &.category-theology {
+        .post-title {
+            color: $theology-color;
+        }
+
+        .post-date {
+            background-color: $theology-color;
+        }
+    }
+
+    &.category-technology {
+        .post-title {
+            color: $technology-color;
+        }
+
+        .post-date {
+            background-color: $technology-color;
+        }
+    }
+}
+
+
+/**
+ * Home Page Overrides
+ */
+
+ body.home .post {
+    &:first-child {
+        margin-top: 0;
+    }
+
+     &.category-theology, &.category-technology {
+         width: 50%;
+     }
+
+     &.category-technology {
+         float: right;
+
+         .post-title {
+             float: right;
+         }
+
+         .post-meta {
+             float: left;
+         }
+
+         .post-content {
+             margin-left: 25%;
+             width: auto;
+         }
+     }
+ }
