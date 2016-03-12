@@ -147,4 +147,35 @@ body.home {
         }
     }
 
+    .posts-theology-container {
+        width: 50%;
+        float: left;
+    }
+
+    .posts-technology-container {
+        margin-left: 50%;
+    }
+
+    /**
+     * Home Page Overrides
+     */
+
+     .post {
+         &.category-technology {
+
+             .post-title {
+                 float: right;
+             }
+
+             .post-meta {
+                 float: left;
+             }
+
+             .post-content {
+                 margin-left: 25%;
+                 width: auto;
+             }
+         }
+     }
+
 }

@@ -26,7 +26,14 @@ layout: home
 </div>
 
 <div class="posts page-container">
-    {% for post in site.posts %}
-        {% include post.html post=post %}
-    {% endfor %}
+    <div class="posts-theology-container">
+        {% for post in site.categories.theology limit:3 %}
+            {% include post.html post=post %}
+        {% endfor %}
+    </div>
+    <div class="posts-technology-container">
+        {% for post in site.categories.technology limit:3 %}
+            {% include post.html post=post %}
+        {% endfor %}
+    </div>
 </div>

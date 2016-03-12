@@ -41,7 +41,6 @@
 }
 
 .post-content {
-    clear: left;
     width: 75%;
 }
 
@@ -71,35 +70,3 @@
         }
     }
 }
-
-
-/**
- * Home Page Overrides
- */
-
- body.home .post {
-    &:first-child {
-        margin-top: 0;
-    }
-
-     &.category-theology, &.category-technology {
-         width: 50%;
-     }
-
-     &.category-technology {
-         float: right;
-
-         .post-title {
-             float: right;
-         }
-
-         .post-meta {
-             float: left;
-         }
-
-         .post-content {
-             margin-left: 25%;
-             width: auto;
-         }
-     }
- }
