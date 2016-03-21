@@ -10,22 +10,20 @@ layout: home
     <div class="intro-content page-container">
         <div class="intro-item theology">
             <div class="description">
-                <p><strong>Jesus Christ</strong> has impacted me more than anything or anyone else.</p>
-                <p class="more"><img src="/img/arrow-theology.svg"> Posts about Jesus</p>
+                <strong>Jesus Christ</strong> has impacted me more than anything or anyone else.
             </div>
             <div class="intro-icon"></div>
         </div>
         <div class="intro-item technology">
             <div class="description">
-                <p><strong>Technology</strong> has held my interest as long as I can remember.</p>
-                <p class="more"><img src="/img/arrow-technology.svg"> Posts about Tech</p>
+                <strong>Technology</strong> has held my interest as long as I can remember.
             </div>
             <div class="intro-icon"></div>
         </div>
     </div>
 </div>
 
-<div class="posts page-container">
+<!-- <div class="posts page-container">
     <div class="posts-theology-container">
         {% for post in site.categories.theology limit:3 %}
             {% include post.html post=post %}
@@ -36,4 +34,8 @@ layout: home
             {% include post.html post=post %}
         {% endfor %}
     </div>
+</div> -->
+
+<div class="all-posts page-container">
+    {% include posts.index.html %}
 </div>

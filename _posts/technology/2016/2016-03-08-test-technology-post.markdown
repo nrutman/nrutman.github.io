@@ -2,7 +2,6 @@
 layout: "post"
 title: "Test Technology Post"
 date: "2016-03-08 08:25"
-category: "technology"
 ---
 Tempor magna ullamco laboris ullamco deserunt et do pariatur non tempor incididunt est sint. Nisi in occaecat ad sint esse et anim eu est duis mollit. Labore ex aliqua duis sit occaecat deserunt eu occaecat eiusmod ad proident ea mollit.
 

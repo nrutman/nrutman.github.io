@@ -1,0 +1,8 @@
+@include media($desktop-size) {
+    body.home {
+
+        .intro-item {
+            @include span-columns(6);
+        }
+    }
+}

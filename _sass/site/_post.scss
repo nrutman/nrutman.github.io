@@ -5,43 +5,43 @@
     &:first-child + .post {
         padding-top: 4em;
     }
-}
 
-.post-title {
-    float: left;
-    font-size: 1.75em;
-    width: 75%;
-}
-
-.post-meta {
-    display: block;
-    float: right;
-    max-width: 120px;
-    right: 0;
-    top: 0;
-    width: 20%;
-}
-
-.post-date {
-    background-color: lighten($dark-gray, 20%);
-    color: white;
-    display: block;
-    font-family: $heading-font-family;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 1;
-    padding: 1em 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-
-    strong {
-        font-size: 20px;
-        font-weight: inherit;
+    .post-title {
+        float: left;
+        font-size: 1.75em;
+        width: 75%;
     }
-}
 
-.post-content {
-    width: 75%;
+    .post-meta {
+        display: block;
+        float: right;
+        max-width: 120px;
+        right: 0;
+        top: 0;
+        width: 20%;
+    }
+
+    .post-date {
+        background-color: lighten($dark-gray, 20%);
+        color: white;
+        display: block;
+        font-family: $heading-font-family;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 1;
+        padding: 1em 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+
+        strong {
+            font-size: 20px;
+            font-weight: inherit;
+        }
+    }
+
+    .post-content {
+        width: 75%;
+    }
 }
 
 

@@ -1,0 +1,20 @@
+<h1>All Posts</h1>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <span class="post-date" title="Posted on {{ post.date | date: '%A, %B %-d, %Y' }}">
+                {{ post.date | date: "%b %-d %Y" }}
+            </span>
+            <span class="post-listing">
+                <a class="post-title" href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+                <ul class="categories">
+                    {% for category in post.categories %}
+                        <li class="category-tag {{ category | downcase | slugify }}">{{ category }}</li>
+                    {% endfor %}
+                </ul>
+            </span>
+        </li>
+    {% endfor %}
+</ul>

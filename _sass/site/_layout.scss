@@ -13,3 +13,39 @@ html, body {
     margin-right: auto;
     max-width: 1200px;
 }
+
+/**
+ * All Posts
+ */
+
+.all-posts {
+
+    > ul > li {
+        // border-top: 1px solid $light-gray;
+        padding: 0 0 0.5em;
+    }
+
+    .post-date {
+        color: $medium-gray;
+        display: block;
+        float: left;
+        font-family: $heading-font-family;
+        font-weight: bold;
+        min-width: 6em;
+        padding: 0 2px;
+        text-align: right;
+    }
+
+    .post-listing {
+        display: block;
+        margin-left: 7em;
+    }
+
+    .post-title {
+        margin-right: 0.5em;
+    }
+
+    .categories {
+        display: inline;
+    }
+}
